@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exploratory Data Analysis Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        ul {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exploratory Data Analysis (EDA) Guide</h1>
+    
+    <h2>1. Foundational Data Understanding</h2>
+    <h3>Data Structure Analysis:</h3>
+    <ul>
+        <li>Identify variables (features, target), data types (numeric, categorical, temporal), and dataset dimensions.</li>
+        <li>Assess data granularity (e.g., time-series frequency, hierarchical structures).</li>
+    </ul>
+    <h3>Summary Statistics:</h3>
+    <ul>
+        <li>Compute and interpret measures of central tendency, dispersion, skewness, and kurtosis.</li>
+        <li>Analyze distributions (e.g., Gaussian, log-normal, multimodal) and their implications for modeling.</li>
+    </ul>
+
+    <h2>2. Advanced Data Visualization</h2>
+    <h3>Univariate Analysis:</h3>
+    <ul>
+        <li>Use histograms, KDE plots, and Q-Q plots to assess feature distributions.</li>
+    </ul>
+    <h3>Bivariate/Multivariate Analysis:</h3>
+    <ul>
+        <li>Explore relationships via scatter plots, heatmaps, and pair plots.</li>
+        <li>Visualize interactions with faceted plots or 3D visualizations.</li>
+    </ul>
+    <h3>Domain-Specific Visualization:</h3>
+    <ul>
+        <li>Time-series decomposition (trend, seasonality, residuals).</li>
+        <li>Geospatial mapping for location-based data.</li>
+    </ul>
+
+    <h2>3. Data Quality & Preprocessing Insights</h2>
+    <h3>Missing Data Analysis:</h3>
+    <ul>
+        <li>Quantify missingness (MCAR, MAR, MNAR) and strategize imputation.</li>
+    </ul>
+    <h3>Outlier Detection:</h3>
+    <ul>
+        <li>Apply IQR, Z-score, or isolation forests to identify outliers.</li>
+        <li>Evaluate impact on models (e.g., robustness of tree-based vs. linear models).</li>
+    </ul>
+    <h3>Data Consistency:</h3>
+    <ul>
+        <li>Validate categorical encoding (e.g., mismatched labels, rare categories).</li>
+        <li>Detect leakage (e.g., time-based splits, proxy variables for the target).</li>
+    </ul>
+
+    <h2>4. Feature Engineering & Selection</h2>
+    <h3>Correlation Analysis:</h3>
+    <ul>
+        <li>Calculate Pearson/Spearman correlations and use heatmaps for interpretation.</li>
+        <li>Identify multicollinearity (VIF, PCA) and its impact on model stability.</li>
+    </ul>
+    <h3>Feature Importance:</h3>
+    <ul>
+        <li>Apply techniques like permutation importance, SHAP values, or LASSO.</li>
+    </ul>
+    <h3>Interaction Effects:</h3>
+    <ul>
+        <li>Engineer interaction terms (e.g., ratios, products) based on domain knowledge.</li>
+    </ul>
+
+    <h2>5. Statistical & Hypothesis-Driven Analysis</h2>
+    <h3>Hypothesis Testing:</h3>
+    <ul>
+        <li>Validate assumptions (normality, homoscedasticity) with tests (e.g., Shapiro-Wilk, Levene’s).</li>
+        <li>Compare groups (t-tests, ANOVA) or assess independence (chi-square).</li>
+    </ul>
+    <h3>Sampling Strategy:</h3>
+    <ul>
+        <li>Evaluate class imbalance and plan resampling (SMOTE, ADASYN) or weighting.</li>
+    </ul>
+
+    <h2>6. Domain Context Integration</h2>
+    <ul>
+        <li>Incorporate domain knowledge to prioritize features (e.g., clinical variables in healthcare).</li>
+        <li>Translate EDA insights into business objectives (e.g., customer churn drivers).</li>
+    </ul>
+
+    <h2>7. Automation & Scalability</h2>
+    <ul>
+        <li>Master libraries like pandas-profiling, Sweetviz, or dtale for rapid insights.</li>
+        <li>Optimize workflows for big data (e.g., Spark/Dask for distributed computing).</li>
+    </ul>
+
+    <h2>8. Ethical & Compliance Considerations</h2>
+    <ul>
+        <li>Analyze feature fairness (e.g., disparate impact in sensitive attributes).</li>
+        <li>Identify and anonymize PII (e.g., using regex or NLP tools).</li>
+    </ul>
+
+    <h2>9. Communication & Collaboration</h2>
+    <ul>
+        <li>Create dashboards (Plotly Dash, Tableau) to communicate insights.</li>
+        <li>Document assumptions and limitations in Jupyter/Colab notebooks.</li>
+    </ul>
+
+    <h2>10. Advanced Techniques</h2>
+    <ul>
+        <li>Apply PCA, t-SNE, or UMAP to uncover latent patterns.</li>
+        <li>Build interactive plots with Plotly or Bokeh for deeper exploration.</li>
+    </ul>
+
+    <h2>11. Integration with ML Workflow</h2>
+    <ul>
+        <li>Use EDA to guide model choices (e.g., tree-based models for non-linear data).</li>
+        <li>Ensure splits respect temporal/spatial dependencies to avoid leakage.</li>
+    </ul>
+
+    <h2>12. Continuous Learning</h2>
+    <ul>
+        <li>Follow tools (e.g., ydata-profiling, lux-api) and research (e.g., automated EDA papers).</li>
+        <li>Compete in Kaggle or tackle real-world projects (e.g., unstructured text/image EDA).</li>
+    </ul>
+</body>
+</html>
